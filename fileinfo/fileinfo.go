@@ -35,7 +35,7 @@ func ReadFileinfo(filename string) {
 		fmt.Println("Is not a regular file")
 	}
 
-	fmt.Printf("Has Unix permission bits: €v\n", file.Perm)
+	fmt.Printf("Has Unix permission bits: %v\n", file.Perm)
 
 	if file&os.ModeAppend != 0 {
 		fmt.Println("Is append only")
